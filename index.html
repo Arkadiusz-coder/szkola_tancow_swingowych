@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Szkoła tańców swingowych</title>
+</head>
+<body>
+    <nav class="nav_bar">
+        <div class="big_screen_flex nav_setting" >
+        <h1 class="title nav_el" id="logo">SwingOut!</h1>
+        <div class="flex_item">
+             <div class="menu_1 big_screen_flex">
+        <div class="nav_el" id="lang_switch">
+            <a id="polish_language_toggle" onclick="changeLanguage('pl')">PL</a>
+            <span>|</span>
+            <a id="english_language_toggle" onclick="changeLanguage('eng')">ENG</a>
+        </div>
+        <div class="nav_el" onclick="toggleDarkMode()" aria-label="toggle dark mode">
+            <svg  
+               xmlns="http://www.w3.org/2000/svg"
+               height="16" width="16" 
+               class="dark-mode-toggle" id="dark-mode-toggle"
+               fill = "var(--creamy-white)"
+               viewBox="0 0 512 512">
+               <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com 
+                License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/>
+            </svg>
+        </div>
+             </div>
+             </div>
+        </div>
+        <div id="nav_category" class="flex_item nav_category">
+            <div class="menu_2 big_screen_flex">
+                <div class="nav_el nav_button" id="swing" onclick="showSection('home'); updateNavAndFooter();">
+                    <a href="#" data-section="home">Swing</a>
+                </div>
+                <div class="nav_el nav_button" id="news" onclick="showSection('news'); updateNavAndFooter();">
+                    <a href="#" data-section="news">Aktualności</a>
+                </div>
+            </div>
+            <div class="menu_3 big_screen_flex">
+                <div class="nav_el nav_button" id="schedule" onclick="showSection('schedule'); updateNavAndFooter();">
+                    <a href="#" data-section="schedule">Harmonogram</a>
+                </div>
+                <div class="nav_el nav_button" id="registration" onclick="showSection('registration'); updateNavAndFooter();">
+                    <a href="#" data-section="registration">Zapisy</a>
+                </div>
+            </div>
+            <div class="menu_4 big_screen_flex">
+                <div class="nav_el nav_button" id="prices"  onclick="showSection('prices'); updateNavAndFooter();">
+                    <a href="#" data-section="prices">Cennik</a>
+                </div>
+                <div class="nav_el nav_button" id="contact" onclick="showSection('contact'); updateNavAndFooter();">
+                    <a href="#" data-section="contact">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div id="home" class="section">
+        <div class="content pl text '.lang_en'">
+            <p>Witaj w Swingowaniu, Twojej bramie do barwnego świata tańca swing! Założone w 2010 roku w samym sercu Krakowa, przy ulicy Ślicznej 30, Swingowanie to miejsce, gdzie rytm spotyka radość, a każdy krok opowiada historię.</p>
+            <p>Dołącz do naszej rodziny tańca swingowego i zanurz się w niepowtarzalnym rytmie Ery Swinga!</p>
+            <div><button class="registration_red_button"><a href="registration.html" alt="">Zarejestruj się dziś!</a></button></div>
+            <div><button class="prices_green_button"><a href="prices.html" alt="">Sprawdź ile oszczędzisz!</a></button></div>
+
+            <h2>Historia Swingu</h2>
+
+            <h3>Era Swinga: Gdzie Rytmy i Kultura Spotkały Się w Harmonii</h3>
+            <div class="flex_content">
+            <div class="flex_photo left">
+                <img src="foto/swing-1.jpeg" width="300px" height="450px">
+            </div>
+            <div class="flex_text">    
+            <p>Era Swinga, trwająca od końca lat 20. do połowy lat 40., była barwnym, przełomowym okresem w historii Ameryki, nasyconym synkopowanymi rytmami muzyki swingowej i ekscytującą kulturą taneczną. Jej sercem było swing, cechujący się zaraźliwymi rytmami, orkiestrami big bandów i improwizacyjnymi melodiami.</p> 
+            <p>Jednak wśród celebracji i kulturalnej żywotności, Era Swinga rozgrywała się na tle segregacji rasowej i dyskryminacji. Pomimo tego, czarnoskórzy muzycy i tancerze odegrali monumentalną rolę w kształtowaniu i definiowaniu kultury swingowej, wnosząc innowacje i niezrównany talent, nawet gdy radzili sobie z wyzwaniami głęboko podzielonego społeczeństwa.</p>
+            </div>
+            </div>
+            
+            
+
+            <h3>Dziedzictwo Swinga: Tkanka Kulturowa</h3>
+            <div class="flex_content">
+            <div class="flex_text left">
+            <p>Era Swinga pozostawiła niezatarty ślad w muzyce, tańcu i dynamice społecznej. Jej wpływ wciąż rezonuje w kulturze współczesnej, inspirując muzyków, tancerzy i entuzjastów na całym świecie. Zaraźliwe melodie i nieodparte rytmy muzyki swingowej trwają w współczesnej jazzowej i popowej muzyce, podczas gdy tańce swingowe stanowią podstawę dla różnorodnych nowoczesnych tańców w parach.</p>
+            <p>Ponadto, wytrwałość epoki w obliczu wyzwań społecznych odzwierciedla się w dążeniu do inkluzywności i różnorodności w sztuce. Stanowi przypomnienie o sile muzyki i tańca w przełamywaniu podziałów oraz łączeniu społeczności, przekraczając bariery rasowe i tła kulturowego.</p>
+            </div>
+            <div class="flex_photo">
+              <img src="foto/swing-2.jpg" width="300px" height="400px">
+            </div>    
+            </div>
+
+            <h3>Odkrywanie Ery Swinga Dziś</h3>
+            <div class="flex_content">
+                <div class="flex_photo left">
+                    <img src="foto/swing-9.jpeg" width="400px" height="400px">
+                </div>
+                <div class="flex_text"> 
+            <p>Dla tych, którzy zachwycili się witalnością Ery Swinga, wiele wydarzeń, festiwali i warsztatów tanecznych oddaje hołd temu wpływowemu okresowi. Uczestnicy mogą doświadczyć radości tańca swingowego, zanurzyć się w koncertach na żywo nowoczesnych big bandów i celebrować kulturowe bogactwo tej minionego epoki. Od kameralnych spotkań po wielkie festiwale, Era Swinga wciąż żyje, zapraszając nowych miłośników do rozkoszowania się jej zaraźliwym rytmem i ponadczasowym urokiem.</p>
+            </div>
+            </div>
+
+            <h2>Tańce Swingowe</h2>
+
+            <h3>Charleston</h3>
+            <div class="flex_content">
+            <div class="flex_text left">
+            <p>Charleston, powstały w latach 20., jest uosobieniem entuzjazmu Ery Swinga. Ten taniec charakteryzuje się energetycznymi, synkopowanymi krokami i żywymi, swobodnymi ruchami. Tańczony zarówno solo, jak i w parach, wyróżniają go kopyta, obracania się i pełne wigoru figury, często przy akompaniamencie szybkiej muzyki jazzowej. Charakterystyczny styl lat 20. i radość z tańca Charlestonu szybko uczyniły go fenomenem kulturowym. Jego popularność wzrosła, wpływając na modę, muzykę i taniec społeczny, stając się symbolem beztroskiego ducha epoki.</p>
+            </div>
+            <div class="flex_photo">
+              <img src="foto/swing-4.jpeg" width="400px" height="400px">
+            </div>    
+            </div>
+            
+            <h3>Lindy Hop</h3>
+            <div class="flex_content">
+                <div class="flex_photo left">
+                    <img src="foto/swing-5.jpeg" width="300px" height="400px">
+                </div>
+                <div class="flex_text"> 
+            <p>Lindy Hop, nazywany często "dziadkiem wszystkich tańców swingowych", pojawił się pod koniec lat 20. i ewoluował w wibracyjnych salach balowych Harlemu. To taniec, który odzwierciedla esencję improwizacji, połączenia i radosnego wyrażania siebie. Lindy Hop charakteryzuje się zaraźliwą energią, płynnymi ruchami i imponującymi akrobacjami, w tym elementami powietrznymi. Partnerzy komunikują się przez ramę taneczną, poruszając się poprzez skomplikowane kroki, obroty i wiry, jednocześnie utrzymując żywe połączenie. Jego wszechstronność pozwala na zarówno beztroskie, swobodne momenty, jak i skomplikowane wzory, czyniąc go ukochanym i trwałym stylem tańca.</p>
+            </div>
+            </div>
+            
+            <h3>Balboa</h3>
+            <div class="flex_content">
+            <div class="flex_text left">
+            <p>Balboa, powstały w południowej Kalifornii w latach 30., to płynny i skomplikowany taniec znany ze swojego bliskiego uścisku i subtelnego kroku. Tańczony do szybkiej muzyki swingowej, Balboa kładzie nacisk na bliski kontakt między partnerami, często przy kontakcie klatka piersiowa w klatkę piersiową, co pozwala na łatwe i precyzyjne ruchy. Taniec ten prezentuje skomplikowane wariacje kroków, złożone obroty i subtelne zmiany ciężaru, tworząc wizualnie imponujące i wyszukane doświadczenie taneczne. Unikalny styl i połączenie Balboa sprzyjają intymnej i eleganckiej dynamice tańca, co czyni go ulubieńcem entuzjastów tańca swingowego.</p>
+            </div>
+            <div class="flex_photo">
+              <img src="foto/swing-6.jpeg" width="300px" height="400px">
+            </div>    
+            </div>
+           
+            <h3>Collegiate Shag</h3>
+            <div class="flex_content">
+                <div class="flex_photo left">
+                    <img src="foto/swing-7.jpeg" width="380px" height="400px">
+                </div>
+                <div class="flex_text"> 
+            <p>Collegiate Shag, upowszechniony w latach 30., to dynamiczny i zabawny taniec charakteryzujący się szybkimi, synkopowanymi krokami i energicznymi rytmami. Tańczony w bliskim uścisku lub w otwartej pozycji, cechuje go skoczny, energetyczny ruch, który doskonale współgra z żywą muzyką swingową. Elementem definiującym Collegiate Shag jest jego rytm "podwójny-trzykrotny", tworzący radosne i zaraźliwe doświadczenie taneczne. Jego radosny, beztroski styl i energetyczne kroki sprawiają, że jest to radosny i rozrywkowy dodatek do repertuaru tanecznych stylów z ery swinga.</p>
+            </div>
+            </div>
+            
+            <h3>Boogie Woogie</h3>
+            <div class="flex_content">
+            <div class="flex_text left">
+            <p>Boogie Woogie, mający swoje korzenie w afroamerykańskich społecznościach pod koniec lat 20., to wysokoenergetyczny, improwizacyjny taniec, charakteryzujący się zabawnymi, rytmicznymi ruchami. Taniec ten jest tańczony do muzyki boogie-woogie, cechującej się dynamicznym rytmem i rytmami opartymi na pianinie. Boogie Woogie obejmuje obracania się, wiry i żywiołowe kroki, pozwalając na indywidualne wyrażenie i kreatywność. Jego zaraźliwa energia i improwizacyjny charakter sprawiają, że jest to ekscytujący i pełen werwy styl tańca, który nadal zachwyca tancerzy i publiczność.</p>
+            </div>
+            <div class="flex_photo">
+              <img src="foto/swing-8.jpg" width="300px" height="400px">
+            </div>    
+            </div>
+        </div>
+
+
+
+        <div class="content text eng '.lang_en'">
+            <p>Welcome to Swingowanie, your ultimate gateway to the vibrant world of swing dance! Established in 2010 right in the heart of Kraków, at Sliczna 30 street, Swingowanie is where rhythm meets joy and every step tells a story.</p>
+            <p>Join our swing dance family and dive into the infectious beats of the Swing Era!</p>
+            <div><button class="registration_red_button"><a href="registration.html" alt="">Register now!</a></button></div>
+            <div><button class="prices_green_button"><a href="prices.html" alt="">Check how much you save!</a></button></div>
+
+            <h2>History of the Swing</h2>
+            
+            <h3>The Swing Era: Where Rhythm and Culture Collided</h3>
+            <div class="flex_content">
+            <div class="flex_photo left">
+                <img src="foto/swing-1.jpeg" width="300px" height="450px">
+            </div>
+            <div class="flex_text">    
+                <p>The Swing Era, spanning the late 1920s to the mid-1940s, was a vibrant, transformative period in American history, infused with the syncopated beats of swing music and the exuberance of dance culture. At its heart was swing music, characterized by its infectious rhythms, big band orchestras, and improvisational melodies.</p>
+                <p>However, amid the celebration and cultural vibrancy, the Swing Era unfolded against a backdrop of racial segregation and discrimination. Despite this, Black musicians and dancers played a monumental role in shaping and defining the swing culture, infusing it with innovation and unparalleled talent, even as they navigated the challenges of a deeply divided society.</p>
+            </div>
+            </div>
+            
+            <h3>The Legacy of Swing: A Cultural Tapestry</h3>
+            <div class="flex_content">
+            <div class="flex_text left">
+                <p>The Swing Era left an indelible mark on music, dance, and social dynamics. Its influence continues to reverberate through modern-day culture, inspiring musicians, dancers, and enthusiasts worldwide. Swing music's infectious melodies and irresistible rhythms persist in contemporary jazz and pop music, while swing dance forms the basis for various modern partner dances.</p>
+                <p>Moreover, the era’s resilience in the face of societal challenges echoes in the ongoing pursuit of inclusivity and diversity within the arts. It serves as a reminder of the power of music and dance to bridge divides and unite communities, transcending barriers of race and background.</p>
+            </div>
+            <div class="flex_photo">
+              <img src="foto/swing-2.jpg" width="300px" height="400px">
+            </div>    
+            </div>
+
+            <h3>Exploring the Swing Era Today</h3>
+            <div class="flex_content">
+                <div class="flex_photo left">
+                    <img src="foto/swing-9.jpeg" width="400px" height="400px">
+                </div>
+                <div class="flex_text"> 
+                    <p>For those enamored by the Swing Era's vivacity, numerous events, festivals, and dance workshops pay homage to this influential period. Attendees can experience the joy of swing dancing, immerse themselves in live performances by modern big bands, and celebrate the cultural richness of this bygone era. From intimate gatherings to grand-scale festivals, the Swing Era lives on, inviting newcomers to revel in its infectious rhythm and timeless charm.</p>
+            </div>
+            </div>
+
+            <h2>Swing Dances</h2>
+            
+
+            <h3>Charleston</h3>
+            <div class="flex_content">
+            <div class="flex_text left">
+                <p>The Charleston, originating in the 1920s, epitomizes the exuberance of the Swing Era. This dance is marked by its energetic, syncopated steps and playful, lively movements. Danced both solo and in pairs, it's characterized by its kicks, swivels, and spirited footwork, often accompanied by upbeat jazz music. The distinctive '20s flapper style and the infectious joy of the Charleston quickly made it a cultural phenomenon. Its popularity soared, influencing fashion, music, and social dance, becoming a symbol of the carefree spirit of the time.</p>
+            </div>
+            <div class="flex_photo">
+              <img src="foto/swing-4.jpeg" width="400px" height="400px">
+            </div>    
+            </div>
+            
+            <h3>Lindy Hop</h3>
+            <div class="flex_content">
+                <div class="flex_photo left">
+                    <img src="foto/swing-5.jpeg" width="300px" height="400px">
+                </div>
+                <div class="flex_text"> 
+                    <p>Lindy Hop, often referred to as the "granddaddy of all swing dances," emerged in the late 1920s and evolved in the vibrant ballrooms of Harlem. It embodies the essence of improvisation, connection, and joyful expression. Lindy Hop is characterized by its infectious energy, fluid movements, and impressive acrobatics, including aerials. Partners communicate through a dance frame, navigating intricate footwork, turns, and spins while maintaining a lively connection. Its versatility allows for both playful, carefree moments and intricate, sophisticated patterns, making it a beloved and enduring dance style.</p>
+            </div>
+            </div>
+            
+            <h3>Balboa</h3>
+            <div class="flex_content">
+            <div class="flex_text left">
+                <p>Balboa, originating in Southern California during the 1930s, is a smooth and intricate dance known for its close embrace and subtle footwork. Danced to fast-paced swing music, Balboa emphasizes a close connection between partners, often with a chest-to-chest contact, allowing for effortless and precise movements. The dance showcases intricate footwork variations, intricate turns, and subtle weight shifts, creating a visually stunning and sophisticated dance experience. Balboa's unique style and connection foster an intimate and elegant dance dynamic, making it a favorite among swing dance enthusiasts.</p>
+            </div>
+            <div class="flex_photo">
+              <img src="foto/swing-6.jpeg" width="300px" height="400px">
+            </div>    
+            </div>
+           
+            <h3>Collegiate Shag</h3>
+            <div class="flex_content">
+                <div class="flex_photo left">
+                    <img src="foto/swing-7.jpeg" width="380px" height="400px">
+                </div>
+                <div class="flex_text"> 
+                    <p>Collegiate Shag, popularized in the 1930s, is a dynamic and playful dance characterized by its quick, syncopated footwork and upbeat rhythms. Danced in a close hold or in an open position, it features a bouncing, energetic movement that syncs perfectly with lively swing music. The defining element of Collegiate Shag is its "double-triple" rhythm, creating a lively and infectious dance experience. Its joyful, carefree style and energetic footwork make it a delightful and entertaining addition to the repertoire of swing-era dances.</p>
+            </div>
+            </div>
+            
+            <h3>Boogie Woogie</h3>
+            <div class="flex_content">
+            <div class="flex_text left">
+                <p>Boogie Woogie, with its roots in African American communities during the late 1920s, is a high-energy, improvisational dance characterized by its playful, rhythmic movements. It's danced to boogie-woogie music, characterized by a driving beat and piano-based rhythms. Boogie Woogie incorporates swivels, spins, and lively footwork, allowing for individual expression and creativity. Its infectious energy and improvisational nature make it an exhilarating and spirited dance style that continues to captivate dancers and audiences alike.</p>
+            </div>
+            <div class="flex_photo">
+              <img src="foto/swing-8.jpg" width="300px" height="400px">
+            </div>    
+            </div>
+
+        </div>
+        </div>
+
+        <div id="news" class="section">
+            <div class="content pl text">
+                <h1>Aktualności</h1>
+                <div class="news_flex">
+    
+                <div class="news_box">
+                        <h2>Nowy semestr! Zapisy od 10.12.!</h2>
+                        <p>Już od 10. grudnia ruszają zapisy na przyszły semestr tańców swingowych!</p>
+                        <p>Zapraszamy wszystkich chętnych, zarówno tych, którzy dopiero zapoznają się z swingującym światem jazzu, jak i tych którzy chcą kontynuować swoją przygodę z tymi pieknymi tańcami!</p>
+                        <p>Rejestracja trwa od 10 do 21 grudnia. Na każdy drugi i kolejny kurs przysługują super zniżki!</p>
+                        <div><button class="registration_red_button"><a href="registration.html" alt="">Zarejestruj się dziś!</a></button></div>
+                        <div><button class="prices_green_button"><a href="prices.html" alt="">Sprawdź ile oszczędzisz!</a></button></div>
+                </div>
+    
+                <div class="news_box">
+                    <h2>Wigilia w SwingOut!</h2>
+                        <p>Już 17. grudnia zapraszamy na świąteczną imprezę w naszej szkole!</p>
+                        <p>Można przychodzić już od 19.00, porozmawiać z ludźmi, potańczyć do setu przygotowanego przez naszych nauczycieli.</p>
+                        <p>O 20.30 zabawa rozkręca się na dobre, przy akompaniamencie zespolu JazzWomen i potrwa do 1.00 w nocy. Zapraszamy!</p>
+                </div>
+    
+                <div class="news_box">
+                        <h2>Praktis!</h2>
+                        <p>Już 9 grudnia, w piątek, odbędzie się u nas Praktis!</p>
+                        <p>Tańczyć można na dwuch salach, w tempie szybkim i wolnym.</p>
+                        <p>Zapraszamy od 18.00 do 19.30.</p>
+                </div>
+    
+              </div>
+            </div>
+    
+            <div class="content eng text">
+                <h1>News</h1>
+                <div class="news_flex">
+    
+                <div class="news_box">
+                        <h2>Registration for the new semester!</h2>
+                    <div class="news_text">
+                        <p>Starting from December 10th, registrations for the upcoming semester of swing dances begin!</p>
+                        <p>We welcome everyone interested, both those who are just getting acquainted with the swinging world of jazz and those who want to continue their adventure with these beautiful dances!</p>
+                        <p>Registration runs from December 10th to December 21st. Super discounts are available for every second and subsequent course.</p>
+                </div>
+    
+                <div class="news_box">
+                        <h2>Christmas Eve at SwingOut!</h2>
+                        <p>On December 17th, we invite you to our Christmas party at our school!</p>
+                        <p>You can arrive from 7:00 PM, socialize, and dance to the set prepared by our teachers.</p>
+                        <p>At 8:30 PM, the party kicks off with music from the JazzWomen band and will continue until 1:00 AM. You're welcome!"</p>
+                </div>
+    
+                <div class="news_box">
+                        <h2>Practice!</h2>
+                        <p>On December 9th, Friday, we will be hosting our Practice session!</p>
+                        <p>You can dance in two rooms, at both fast and slow tempos.</p>
+                        <p>We invite you from 6:00 PM to 7:30 PM.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="schedule" class="section">
+            <div class="content pl text">
+                <h1 class="schedule_title">Harmonogram zajęć</h1>
+                <p class="classes_time_framework">4. października - 21. grudnia</p>
+                
+                <div class="lessons_day">
+                <h2 class="day_title">Poniedziałek</h2>
+    
+                <div class="grid_element">
+                <div class="hour">18:00 - 19:25</div>
+                <div class="lesson lindy">Lindy Hop 9</div>
+                <div class="lesson balboa beginner">Balboa 1</div>
+                <div></div>
+                </div>
+                
+                
+                <div class="grid_element">
+                <div class="hour">19:30 - 20:55</div>
+                <div class="lesson lindy beginner">Lindy Hop 1</div>
+                <div class="lesson lindy">Lindy Hop 5</div>
+                <div class="lesson solo">Solo Jazz 5</div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">21:00 - 22.25</div>    
+                <div class="lesson solo beginner">Solo Jazz 1</div>
+                <div class="lesson balboa">Balboa 3</div>
+                <div></div>
+                </div>
+                </div>
+    
+                <div class="lessons_day">
+                <h2 class="day_title">Wtorek</h2>
+    
+                <div class="grid_element">
+                <div class="hour">18:00 - 19:25</div>
+                <div class="lesson boogie">Boogie Woogie 3</div>
+                <div class="lesson boogie beginner">Boogie Woogie 1</div>
+                <div class="lesson charleston">Charleston 2</div>
+                </div>
+                
+                
+                <div class="grid_element">
+                <div class="hour">19:30 - 20:55</div>
+                <div class="lesson boogie">Boogie Woogie 4</div>
+                <div class="lesson lindy">Lindy Hop 8</div>
+                <div class="lesson lindy beginner">Lindy Hop 1</div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">21:00 - 22.25</div>    
+                <div class="lesson boogie">Boogie Woogie 2a</div>
+                <div class="lesson solo">Solo Jazz 4</div>
+                <div class="lesson lindy">Lindy Hop 2</div>
+                </div>
+                </div>
+    
+                <div class="lessons_day">
+                <h2 class="day_title">Środa</h2>
+    
+                <div class="grid_element">
+                <div class="hour">18:00 - 19:25</div>
+                <div class="lesson charleston beginner">Charleston 1</div>
+                <div class="lesson solo beginner">Solo Jazz 1</div>
+                <div></div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">19:30 - 20:55</div>
+                <div class="lesson lindy">Lindy Hop 6</div>
+                <div class="lesson lindy">Lindy Hop 3b</div>
+                <div class="lesson balboa">Balboa 2</div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">21:00 - 22.25</div>    
+                <div class="lesson lindy">Lindy Hop 7</div>
+                <div class="lesson solo">Solo Jazz 3</div>
+                <div class="lesson lindy beginner">Lindy Hop 1</div>
+                </div>
+                </div>
+    
+                <div class="lessons_day">
+                <h2 class="day_title">Czwartek</h2>
+    
+                <div class="grid_element">
+                <div class="hour">18:00 - 19:25</div>
+                <div class="lesson lindy beginner">Lindy Hop 1</div>
+                <div class="lesson lindy">Lindy Hop 3a</div>
+                <div class="lesson shag">Collegiate Shag 3</div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">19:30 - 20:55</div>
+                <div class="lesson lindy">Lindy Hop 2</div>
+                <div class="lesson lindy">Lindy Hop 3b</div>
+                <div class="lesson shag">Collegiate Shag 4</div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">21:00 - 22.25</div>    
+                <div class="lesson lindy">Lindy Hop 4</div>
+                <div class="lesson aerials">Aerials</div>
+                <div class="lesson shag">Collegiate Shag 2</div>
+                </div>
+            </div>
+            <div class="content eng text">
+                <h1 class="schedule_title">Lessons schedule</h1>
+                <p class="classes_time_framework">4th October - 21st December</p>
+    
+                <div class="lessons_day">
+                    <h2 class="day_title">Monday</h2>
+                    <div class="grid_element">
+                    <div class="hour">18:00 - 19:25</div>
+                    <div class="lesson lindy">Lindy Hop 9</div>
+                    <div class="lesson balboa beginner">Balboa 1</div>
+                    <div></div>
+                    </div>
+                    
+                    
+                    <div class="grid_element">
+                    <div class="hour">19:30 - 20:55</div>
+                    <div class="lesson lindy beginner">Lindy Hop 1</div>
+                    <div class="lesson lindy">Lindy Hop 5</div>
+                    <div class="lesson solo">Solo Jazz 5</div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">21:00 - 22.25</div>    
+                    <div class="lesson solo beginner">Solo Jazz 1</div>
+                    <div class="lesson balboa">Balboa 3</div>
+                    <div></div>
+                    </div>
+                    </div>
+        
+                    <div class="lessons_day">
+                    <h2 class="day_title">Tuesday</h2>
+                    <div class="grid_element">
+                    <div class="hour">18:00 - 19:25</div>
+                    <div class="lesson boogie">Boogie Woogie 3</div>
+                    <div class="lesson boogie beginner">Boogie Woogie 1</div>
+                    <div class="lesson charleston">Charleston 2</div>
+                    </div>
+                    
+                    
+                    <div class="grid_element">
+                    <div class="hour">19:30 - 20:55</div>
+                    <div class="lesson boogie">Boogie Woogie 4</div>
+                    <div class="lesson lindy">Lindy Hop 8</div>
+                    <div class="lesson lindy beginner">Lindy Hop 1</div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">21:00 - 22.25</div>    
+                    <div class="lesson boogie">Boogie Woogie 2a</div>
+                    <div class="lesson solo">Solo Jazz 4</div>
+                    <div class="lesson lindy">Lindy Hop 2</div>
+                    </div>
+                    </div>
+        
+                    <div class="lessons_day">
+                    <h2 class="day_title">Wendesday</h2>
+                    <div class="grid_element">
+                    <div class="hour">18:00 - 19:25</div>
+                    <div class="lesson charleston beginner">Charleston 1</div>
+                    <div class="lesson solo beginner">Solo Jazz 1</div>
+                    <div></div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">19:30 - 20:55</div>
+                    <div class="lesson lindy">Lindy Hop 6</div>
+                    <div class="lesson lindy">Lindy Hop 3b</div>
+                    <div class="lesson balboa">Balboa 2</div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">21:00 - 22.25</div>    
+                    <div class="lesson lindy">Lindy Hop 7</div>
+                    <div class="lesson solo">Solo Jazz 3</div>
+                    <div class="lesson lindy beginner">Lindy Hop 1</div>
+                    </div>
+                    </div>
+        
+                    <div class="lessons_day">
+                    <h2 class="day_title">Thursday</h2>
+                    <div class="grid_element">
+                    <div class="hour">18:00 - 19:25</div>
+                    <div class="lesson lindy beginner">Lindy Hop 1</div>
+                    <div class="lesson lindy">Lindy Hop 3a</div>
+                    <div class="lesson shag">Collegiate Shag 3</div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">19:30 - 20:55</div>
+                    <div class="lesson lindy">Lindy Hop 2</div>
+                    <div class="lesson lindy">Lindy Hop 3b</div>
+                    <div class="lesson shag">Collegiate Shag 4</div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">21:00 - 22.25</div>    
+                    <div class="lesson lindy">Lindy Hop 4</div>
+                    <div class="lesson aerials">Aerials</div>
+                    <div class="lesson shag">Collegiate Shag 2</div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div id="registration" class="section">
+            <div class="content pl text">
+                <h1 class="schedule_title">Plan nowego semestru</h1>
+                <p class="classes_time_framework">8. stycznia - 21. marca</p>
+                <p class="registration_invitation">Kliknij w wybrane zajecia i zarejestruj się!</p>
+                
+                <div class="lessons_day">
+                <h2 class="day_title">Poniedziałek</h2>
+                <div class="grid_element">
+                <div class="hour">18:00 - 19:25</div>
+                <div class="lesson lindy">Lindy Hop 9</div>
+                <div class="lesson balboa beginner">Balboa 1</div>
+                <div></div>
+                </div>
+                
+                
+                <div class="grid_element">
+                <div class="hour">19:30 - 20:55</div>
+                <div class="lesson lindy beginner">Lindy Hop 1</div>
+                <div class="lesson lindy">Lindy Hop 5</div>
+                <div class="lesson solo">Solo Jazz 5</div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">21:00 - 22.25</div>    
+                <div class="lesson solo beginner">Solo Jazz 1</div>
+                <div class="lesson balboa">Balboa 3</div>
+                <div></div>
+                </div>
+                </div>
+    
+                <div class="lessons_day">
+                <h2 class="day_title">Wtorek</h2>
+                <div class="grid_element">
+                <div class="hour">18:00 - 19:25</div>
+                <div class="lesson boogie">Boogie Woogie 3</div>
+                <div class="lesson boogie beginner">Boogie Woogie 1</div>
+                <div class="lesson charleston">Charleston 2</div>
+                </div>
+                
+                
+                <div class="grid_element">
+                <div class="hour">19:30 - 20:55</div>
+                <div class="lesson boogie">Boogie Woogie 4</div>
+                <div class="lesson lindy">Lindy Hop 8</div>
+                <div class="lesson lindy beginner">Lindy Hop 1</div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">21:00 - 22.25</div>    
+                <div class="lesson boogie">Boogie Woogie 2a</div>
+                <div class="lesson solo">Solo Jazz 4</div>
+                <div class="lesson lindy">Lindy Hop 2</div>
+                </div>
+                </div>
+    
+                <div class="lessons_day">
+                <h2 class="day_title">Środa</h2>
+                <div class="grid_element">
+                <div class="hour">18:00 - 19:25</div>
+                <div class="lesson charleston beginner">Charleston 1</div>
+                <div class="lesson solo beginner">Solo Jazz 1</div>
+                <div></div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">19:30 - 20:55</div>
+                <div class="lesson lindy">Lindy Hop 6</div>
+                <div class="lesson lindy">Lindy Hop 3b</div>
+                <div class="lesson balboa">Balboa 2</div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">21:00 - 22.25</div>    
+                <div class="lesson lindy">Lindy Hop 7</div>
+                <div class="lesson solo">Solo Jazz 3</div>
+                <div class="lesson lindy beginner">Lindy Hop 1</div>
+                </div>
+                </div>
+    
+                <div class="lessons_day">
+                <h2 class="day_title">Czwartek</h2>
+                <div class="grid_element">
+                <div class="hour">18:00 - 19:25</div>
+                <div class="lesson lindy beginner">Lindy Hop 1</div>
+                <div class="lesson lindy">Lindy Hop 3a</div>
+                <div class="lesson shag">Collegiate Shag 3</div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">19:30 - 20:55</div>
+                <div class="lesson lindy">Lindy Hop 2</div>
+                <div class="lesson lindy">Lindy Hop 3b</div>
+                <div class="lesson shag">Collegiate Shag 4</div>
+                </div>
+                
+                <div class="grid_element">
+                <div class="hour">21:00 - 22.25</div>    
+                <div class="lesson lindy">Lindy Hop 4</div>
+                <div class="lesson aerials">Aerials</div>
+                <div class="lesson shag">Collegiate Shag 2</div>
+                </div>
+                </div>
+    
+            </div>
+    
+            <div class="content eng text">
+                <h1 class="schedule_title">New semester schedule</h1>
+                <p class="classes_time_framework">8th October - 21st March</p>
+                <p class="registration_invitation">Click the dance classes and register!</p>
+    
+                <div class="lessons_day">
+                    <h2 class="day_title">Monday</h2>
+                    <div class="grid_element">
+                    <div class="hour">18:00 - 19:25</div>
+                    <div class="lesson lindy">Lindy Hop 9</div>
+                    <div class="lesson balboa beginner">Balboa 1</div>
+                    <div></div>
+                    </div>
+                    
+                    
+                    <div class="grid_element">
+                    <div class="hour">19:30 - 20:55</div>
+                    <div class="lesson lindy beginner">Lindy Hop 1</div>
+                    <div class="lesson lindy">Lindy Hop 5</div>
+                    <div class="lesson solo">Solo Jazz 5</div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">21:00 - 22.25</div>    
+                    <div class="lesson solo beginner">Solo Jazz 1</div>
+                    <div class="lesson balboa">Balboa 3</div>
+                    <div></div>
+                    </div>
+                    </div>
+        
+                    <div class="lessons_day">
+                    <h2 class="day_title">Tuesday</h2>
+    
+                    <div class="grid_element">
+                    <div class="hour">18:00 - 19:25</div>
+                    <div class="lesson boogie">Boogie Woogie 3</div>
+                    <div class="lesson boogie beginner">Boogie Woogie 1</div>
+                    <div class="lesson charleston">Charleston 2</div>
+                    </div>
+                    
+                    
+                    <div class="grid_element">
+                    <div class="hour">19:30 - 20:55</div>
+                    <div class="lesson boogie">Boogie Woogie 4</div>
+                    <div class="lesson lindy">Lindy Hop 8</div>
+                    <div class="lesson lindy beginner">Lindy Hop 1</div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">21:00 - 22.25</div>    
+                    <div class="lesson boogie">Boogie Woogie 2a</div>
+                    <div class="lesson solo">Solo Jazz 4</div>
+                    <div class="lesson lindy">Lindy Hop 2</div>
+                    </div>
+                    </div>
+        
+                    <div class="lessons_day">
+                    <h2 class="day_title">Wendesday</h2>
+                    <div class="grid_element">
+                    <div class="hour">18:00 - 19:25</div>
+                    <div class="lesson charleston beginner">Charleston 1</div>
+                    <div class="lesson solo beginner">Solo Jazz 1</div>
+                    <div></div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">19:30 - 20:55</div>
+                    <div class="lesson lindy">Lindy Hop 6</div>
+                    <div class="lesson lindy">Lindy Hop 3b</div>
+                    <div class="lesson balboa">Balboa 2</div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">21:00 - 22.25</div>    
+                    <div class="lesson lindy">Lindy Hop 7</div>
+                    <div class="lesson solo">Solo Jazz 3</div>
+                    <div class="lesson lindy beginner">Lindy Hop 1</div>
+                    </div>
+                    </div>
+        
+                    <div class="lessons_day">
+                    <h2 class="day_title">Thursday</h2>
+                    <div class="grid_element">
+                    <div class="hour">18:00 - 19:25</div>
+                    <div class="lesson lindy beginner">Lindy Hop 1</div>
+                    <div class="lesson lindy">Lindy Hop 3a</div>
+                    <div class="lesson shag">Collegiate Shag 3</div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">19:30 - 20:55</div>
+                    <div class="lesson lindy">Lindy Hop 2</div>
+                    <div class="lesson lindy">Lindy Hop 3b</div>
+                    <div class="lesson shag">Collegiate Shag 4</div>
+                    </div>
+                    
+                    <div class="grid_element">
+                    <div class="hour">21:00 - 22.25</div>    
+                    <div class="lesson lindy">Lindy Hop 4</div>
+                    <div class="lesson aerials">Aerials</div>
+                    <div class="lesson shag">Collegiate Shag 2</div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+
+        <div id="prices" class="section">
+            <div class="content pl text">
+                <div class="prices_container">
+                    <h1>Cennik</h1>
+                    <h2>Ceny za zajęcia</h2>
+                    <p class="price_info">Cena za kurs (17 godzin): 456zł.</p>
+                    <p class="price_info">Cena za krótki kurs wakacyjny (4 godziny): 156zł.</p>
+                    <p class="price_info">Cena za kurs wakacyjny od podstaw (12 godzin): 432 zł.</p>
+                    <h2>Zniżki</h2>
+                    <p class="price_info">20% zniżki za drugi kurs w tym samym semestrze</p>
+                    <p class="price_info">50% zniżki za trzeci i kolejne kursy w tym samym semestrze</p>
+                    <p class="other_discounts">UWAGA: nie uznajemy kart Multisport!</p>
+                </div>
+            </div>
+    
+            <div class="content eng text">
+                <div class="prices_container">
+                    <h1>Prices</h1>
+                    <h2>Prices for classes</h2>
+                    <p class="price_info">Regular classes (17h): 456zł.</p>
+                    <p class="price_info">Short holidays classes (4h): 156zł.</p>
+                    <p class="price_info">Holidays classes for beginners (12h): 432zł.</p>
+                    <h2>Discount</h2>
+                    <p class="price_info">20% discount for the second cours in the semester</p>
+                    <p class="price_info">50% discount for the third and any next courses in the semester</p>
+                    <p class="other_discounts">ATTENTION: We do not accept Multisport cards!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="content pl '.lang_en'">
+      <div class="footer_container">
+      <div class="flex_item">
+          <div class="address_1">
+            <p>SwingOut!</p>
+            <p class="street">ul. Śliczna 30</p>
+            <p>30-025 Kraków</p>
+          </div>
+          <div class="address_2">
+                <p id="phone">tel.: +48 123 456 789</p>
+                <p id="email">email: arekd@protonmail.com</p>
+          </div>
+        <div class="links">
+            <p class="terms" id="terms"><a href="" >Regulamin</a></p>
+            <p class="privacy" id="privacy"><a href="" >Polityka prywatności</a></p>
+        </div>
+      </div>
+            <div class="social_media">
+             <div class="fb">
+            <a href="">
+              <?xml version="1.0" ?>
+              <svg 
+                  height="1.2rem" 
+                  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" 
+                  version="1.4" 
+                  viewBox="0 0 512 512" 
+                  width="1.2rem" 
+                  xml:space="preserve" 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  xmlns:serif="http://www.serif.com/" 
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path 
+                    d="M374.244,285.825l14.105,-91.961l-88.233,0l0,-59.677c0,-25.159 12.325,-49.682 51.845,-49.682l40.116,0l0,-78.291c0,0 -36.407,-6.214 -71.213,-6.214c-72.67,0 -120.165,44.042 -120.165,123.775l0,70.089l-80.777,0l0,91.961l80.777,0l0,222.31c16.197,2.541 32.798,3.865 49.709,3.865c16.911,0 33.511,-1.324 49.708,-3.865l0,-222.31l74.128,0Z" 
+                    style="fill-rule:nonzero;"/>
+                </svg>
+            </a>
+            </div>
+            <div class="insta">
+            <a>
+              <?xml version="1.0" ?>
+              <svg 
+                width="1.5rem"
+                height="1.5rem"
+                viewBox="0 0 24 24" 
+                xmlns="http://www.w3.org/2000/svg">
+                <g><path 
+                    d="M0 0h24v24H0z" 
+                    fill="none"/>
+                    <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" fill-rule="nonzero"/></g></svg>
+            
+            </a>
+            </div>
+            <div class="yt">
+            <a>
+             <?xml version="1.0" ?>
+             <svg 
+             height="1.5rem" 
+             style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" 
+             version="1.1" 
+             viewBox="0 0 512 512" 
+             width="1.5rem" 
+             xml:space="preserve" 
+             xmlns="http://www.w3.org/2000/svg" 
+             xmlns:serif="http://www.serif.com/" 
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+             <path d="M501.303,132.765c-5.887,-22.03 -23.235,-39.377 -45.265,-45.265c-39.932,-10.7 -200.038,-10.7 -200.038,-10.7c0,0 -160.107,0 -200.039,10.7c-22.026,5.888 -39.377,23.235 -45.264,45.265c-10.697,39.928 -10.697,123.238 -10.697,123.238c0,0 0,83.308 10.697,123.232c5.887,22.03 23.238,39.382 45.264,45.269c39.932,10.696 200.039,10.696 200.039,10.696c0,0 160.106,0 200.038,-10.696c22.03,-5.887 39.378,-23.239 45.265,-45.269c10.696,-39.924 10.696,-123.232 10.696,-123.232c0,0 0,-83.31 -10.696,-123.238Zm-296.506,200.039l0,-153.603l133.019,76.802l-133.019,76.801Z" 
+             style="fill-rule:nonzero;"/>
+            </svg> 
+            </a>
+            </div>
+        </div>
+      </div>
+        <div class="author_note">
+            <p><a href="" class="author_link">Made by Arkadiusz Deka 2023</a></p>
+        </div>
+     </div>
+    </footer>
+    
+    <footer class="content eng '.lang_en'">
+     <div class="footer_container">
+        <div class="flex_item">
+            <div class="address_1">
+            <p>SwingOut!</p>
+            <p>Śliczna street 30</p>
+            <p>30-025 Kraków</p>
+            </div>
+            <div class="address_2">
+                <p>phone: +48 123 456 789</p>
+                <p>email: arekd@protonmail.com</p>
+                </div>
+        <div class="links">
+            <p id="terms" class="terms"><a href="">Terms of service</a></p>
+            <p id="privacy" class="privacy"><a href="">Privacy policy</a></p>
+        </div>
+        </div>
+        <div class="social_media">
+            <div class="fb">
+            <a>
+              <?xml version="1.0" ?>
+              <svg 
+                  height="1.5rem" 
+                  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" 
+                  version="1.1" 
+                  viewBox="0 0 512 512" 
+                  width="1.5rem" 
+                  xml:space="preserve" 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  xmlns:serif="http://www.serif.com/" 
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path 
+                    d="M374.244,285.825l14.105,-91.961l-88.233,0l0,-59.677c0,-25.159 12.325,-49.682 51.845,-49.682l40.116,0l0,-78.291c0,0 -36.407,-6.214 -71.213,-6.214c-72.67,0 -120.165,44.042 -120.165,123.775l0,70.089l-80.777,0l0,91.961l80.777,0l0,222.31c16.197,2.541 32.798,3.865 49.709,3.865c16.911,0 33.511,-1.324 49.708,-3.865l0,-222.31l74.128,0Z" 
+                    style="fill-rule:nonzero;"/>
+                </svg>
+            </a>
+            </div>
+            <div class="insta">
+            <a>
+              <?xml version="1.0" ?>
+              <svg 
+                width="1.5rem"
+                height="1.5rem"
+                viewBox="0 0 24 24" 
+                xmlns="http://www.w3.org/2000/svg">
+                <g><path 
+                    d="M0 0h24v24H0z" 
+                    fill="none"/>
+                    <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" fill-rule="nonzero"/></g></svg>
+            
+            </a>
+            </div>
+            <div class="yt">
+            <a>
+             <?xml version="1.0" ?>
+             <svg 
+             height="1.5rem" 
+             style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" 
+             version="1.1" 
+             viewBox="0 0 512 512" 
+             width="1.5rem" 
+             xml:space="preserve" 
+             xmlns="http://www.w3.org/2000/svg" 
+             xmlns:serif="http://www.serif.com/" 
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+             <path d="M501.303,132.765c-5.887,-22.03 -23.235,-39.377 -45.265,-45.265c-39.932,-10.7 -200.038,-10.7 -200.038,-10.7c0,0 -160.107,0 -200.039,10.7c-22.026,5.888 -39.377,23.235 -45.264,45.265c-10.697,39.928 -10.697,123.238 -10.697,123.238c0,0 0,83.308 10.697,123.232c5.887,22.03 23.238,39.382 45.264,45.269c39.932,10.696 200.039,10.696 200.039,10.696c0,0 160.106,0 200.038,-10.696c22.03,-5.887 39.378,-23.239 45.265,-45.269c10.696,-39.924 10.696,-123.232 10.696,-123.232c0,0 0,-83.31 -10.696,-123.238Zm-296.506,200.039l0,-153.603l133.019,76.802l-133.019,76.801Z" 
+                   style="fill-rule:nonzero;"/>
+            </svg>
+            </a>
+            </div>
+        </div>
+        <div class="author_note">
+            <p><a href="" class="author_link">Made by Arkadiusz Deka 2023</a></p>
+        </div>
+     </div>  
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

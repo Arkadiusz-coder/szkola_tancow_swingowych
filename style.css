@@ -1,0 +1,569 @@
+*, ::before, ::after
+{
+    box-sizing: border-box;
+}
+
+:root
+{
+
+    --orange-web: #ffae03ff;
+    --fulvous: #e67f0dff;
+    --aerospace-orange: #fe4e00ff;
+    --chili-red: #e9190fff;
+    --navy-blue: #19037dff;
+    --creamy-white: rgb(252, 247, 247);
+    --black: black;
+}
+
+.darkmode
+{
+    --orange-web: black;
+    --fulvous: #e67f0dff;
+    --aerospace-orange: #fe4e00ff;
+    --chili-red: #e9190fff;
+    --navy-blue: rgb(8, 2, 36);
+    --creamy-white: rgb(252, 247, 247);
+    --black: var(--creamy-white);
+}
+
+body
+{
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+.nav_bar
+{
+    margin: 0;
+    padding-top: .5rem;
+    padding-bottom: 2rem;
+    background-color: var(--navy-blue);
+    overflow: hidden;
+    position: relative;
+    top: -2rem;
+}
+
+.nav_el
+{
+    display: block;
+    color: var(--creamy-white);
+    text-align: center;
+    padding: .5rem 0rem;
+}
+
+.nav_el a
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--creamy-white);
+}
+
+.nav_el a:hover
+{
+    color: var(--chili-red);
+}
+
+.menu_1
+{
+    padding-bottom: 1rem;
+}
+
+svg:hover
+{
+    cursor: pointer;
+}
+
+.lang-switch
+{
+    position: absolute;
+    right: 0;
+}
+
+.pl
+{
+    display: block;
+}
+
+.eng
+{
+    display: none;
+}
+
+#logo
+{
+    font-size: 1.5rem;
+    font-family: Agbalumo, sans-serif;
+    color: white;
+}
+
+.nav_category
+{
+    max-width: 905px;
+    margin: 0 auto;
+    padding-top: .5rem;
+}
+
+.nav_button
+{
+  font-variant: small-caps;
+}
+
+main
+{
+    margin-top: -2rem;
+    padding: 2rem 1rem;
+    background-color: var(--orange-web);
+}
+
+.text
+{
+    font-size: 1.1rem;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    color: var(--black);
+}
+
+.registration_red_button
+{
+    background-color: var(--chili-red);
+    padding: .5rem 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem 1rem var(--navy-blue);
+}
+
+.prices_green_button
+{
+    background-color: green;
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem 1rem black;
+    margin-bottom: 2rem;
+}
+
+.registration_red_button:hover, .prices_green_button:hover
+{
+    cursor: pointer;
+    background-color: var(--fulvous);
+}
+
+button > a
+{
+    text-decoration: none;
+    color: var(--creamy-white);
+}
+
+.flex_photo
+{
+    text-align: center;
+}
+
+h2, h3
+{
+    text-align: center;
+}
+
+h2
+{
+    font-family: Agbalumo, sans-serif;
+}
+
+h3
+{
+    font-family: Montserrat, sans-serif;
+    font-variant: small-caps;
+}
+
+footer
+{   
+    font-size: 1rem;
+    min-height: 100%;
+    background-color: var(--navy-blue);
+    color: var(--creamy-white);
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.footer_container
+{
+    max-width: 900px;
+    padding-inline: 4rem;
+    margin: 0 auto;
+}
+
+.links a
+{
+    color: var(--aerospace-orange);
+    text-decoration: none;
+}
+
+.social_media, .address_1, .address_2, .other_links
+{
+    padding-bottom: .5rem;
+}
+
+.terms:hover, .privacy:hover
+{
+    cursor: pointer;
+    color: var(--chili-red);
+}
+
+.terms:hover a, .privacy:hover a 
+{
+    color: var(--chili-red);
+}
+
+.social_media
+{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 1.5rem;
+}
+
+.fb, .insta, .yt
+{
+    padding-inline: 1rem .5rem;
+}
+
+.fb:hover, .insta:hover, .yt:hover
+{
+    cursor: pointer;
+    fill: var(--chili-red);
+    transition: .3s;
+}
+ 
+svg:hover
+{
+    color: var(--chili-red);
+}
+
+.author_link
+{
+    text-decoration: none;
+    color: var(--aerospace-orange);
+    font-size: .7rem;
+    position: relative;
+    bottom: -2rem;
+}
+
+.author_link:hover
+{
+    color: var(--chili-red);
+}
+
+/* news style */
+h1
+{
+    font-family: Agbalumo, sans-serif;
+    font-variant: small-caps;
+    color: white;
+    text-align: center;
+    padding-top: .8rem;
+    padding-bottom: 4rem;
+}
+
+.news_box
+{
+    max-width: 328px;
+    border: 1rem solid var(--chili-red);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 auto 2rem;
+    background-color: var(--fulvous);
+    max-height: 30rem;
+    transition: max-height .3s ease;
+    overflow: hidden;
+}
+
+.news_content
+{
+    height: 100%;
+    z-index: 0;
+}
+
+.news_title
+{
+    color: var(--creamy-white);
+    padding-left: .5rem;
+}
+
+.news_photo
+{
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    padding-left: .5rem;
+    border-radius: 1rem;
+}
+
+.news_text
+{
+    font-family: Montserrat, sans-serif;
+    padding-left: .5rem;
+}
+
+.news_text p:first-child
+{
+    font-weight: 600;
+}
+
+.show_more_btn
+{
+    display: block;
+    position: relative;
+    top: -40rem;
+    background-color: var(--aerospace-orange);
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem 1.5rem;
+}
+
+/* lessons style */
+.schedule_title
+{
+    font-family: Agbalumo, sans-serif;
+    color: var(--creamy-white);
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: -1rem;
+}
+
+.classes_time_framework
+{
+    font-family: Agbalumo, sans-serif;
+    color: var(--creamy-white);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.registration_invitation
+{
+    font-family: Agbalumo, sans-serif;
+    color: var(--chili-red);
+    font-size: 1.2rem;
+    text-align: center;
+    padding-inline: 3rem;
+}
+
+.grid_element
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+.day_title
+{
+    color: var(--black);
+}
+
+.hour
+{   
+    background-color: var(--orange-web);
+    color: rgb(185, 5, 5);
+    margin: .5rem;
+    padding-left: 0rem;
+}
+
+.lesson
+{
+    background-color: var(--aerospace-orange);
+    border: .2rem solid var(--chili-red);
+    border-radius: .5rem;
+    padding: .7rem;
+    margin: .3rem;
+    text-align: center;
+}
+
+.lesson:hover
+{
+    cursor: pointer;
+    background-color: var(--chili-red);
+    border: .2rem solid var(--aerospace-orange);
+}
+
+.beginner
+{
+    border-color: var(--chili-red);
+    background-color: var(--fulvous);
+}
+
+.beginner:hover
+{
+    border-color: var(--fulvous);
+    background-color: var(--chili-red);
+}
+
+.dance_lesson_box
+{
+    display: none;
+    max-width: 680px;
+    border: .2rem solid var(--aerospace-orange);
+    border-radius: 1rem;
+    margin: 0 auto .5rem;
+    background-color: var(--fulvous);
+    
+}
+
+.lessons_name
+{
+    font-size: .9rem;
+    font-style: italic;
+    font-weight: 400;
+    padding-left: .5rem;
+}
+
+.lesson_title 
+{
+    padding-inline: 1.5rem;
+}
+
+.lesson_description
+{
+    padding-inline: 1.5rem;
+}
+
+/* prices style */
+.prices_container
+{
+    text-align: center;
+    color: var(--black);
+}
+
+.prices_container > h1
+{
+    font-family: Agbalumo, sans-serif;
+    margin: -2rem auto 2rem;
+    padding-top: 1.5rem;
+    color: var(--creamy-white);
+}
+
+.other_discounts
+{
+    padding-top: 2rem;
+}
+
+@media (min-width: 768px)
+{
+    .nav_setting
+    {
+        transition: transform .3s ease;
+    }
+
+    .nav_category
+    {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: var(--navy-blue);
+        margin: 0 auto;
+    }
+
+    .sticky 
+    {
+        position: fixed;
+        top: 0;
+    }
+
+    .flex_item
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu_1
+    {
+        justify-content:center;
+    }
+
+    .menu_3
+    {
+        padding-right: 1rem;
+    }
+
+    .flex_content
+    {
+        display: flex;
+    }
+
+    .left
+    {
+        padding-right: 1rem;
+    }
+
+    .address_2
+    {
+        padding-top: 1.5rem;
+        padding-right: 1rem;
+        padding-left: 3rem;
+    }
+
+    .links
+    {
+        padding-top: 1.5rem;
+    }
+
+    .nav_category
+    {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: var(--navy-blue);
+        margin: 0 auto;
+    }
+
+    .sticky 
+    {
+        position: fixed;
+        top: 0;
+    }
+
+
+
+}
+
+@media (min-width: 1024px)
+{
+        .nav_el
+        {
+            padding-inline: 1.5rem;
+        } 
+    
+
+        .big_screen_flex
+        {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu_1
+        {
+            padding: 2rem 0 0;
+        }
+
+        .news_flex
+        {
+           display: flex;
+           justify-content: space-evenly;
+}
+}
+
+@media (min-width: 1224px)
+{
+
+       .author_link
+       {
+          padding-bottom: 0;
+       }
+}
